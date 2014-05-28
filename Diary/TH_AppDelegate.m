@@ -66,7 +66,7 @@
 }
 
 #pragma mark - Core Data stack
-
+//lazy instantiation
 // Returns the managed object context for the application.
 // If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
 - (NSManagedObjectContext *)managedObjectContext
@@ -103,6 +103,7 @@
         return _persistentStoreCoordinator;
     }
     
+    //where our data store is going to live
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Diary.sqlite"];
     
     NSError *error = nil;
@@ -143,7 +144,9 @@
 // Returns the URL to the application's Documents directory.
 - (NSURL *)applicationDocumentsDirectory
 {
-    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory
+                                                   inDomains:NSUserDomainMask]
+            lastObject];
 }
 
 @end
