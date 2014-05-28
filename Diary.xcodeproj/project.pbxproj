@@ -22,6 +22,7 @@
 		EA6E6087193627B00083133F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6E606B193627B00083133F /* CoreData.framework */; };
 		EA6E608F193627B00083133F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA6E608D193627B00083133F /* InfoPlist.strings */; };
 		EA6E6091193627B00083133F /* DiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E6090193627B00083133F /* DiaryTests.m */; };
+		EA6E609C193636680083133F /* TH-CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E609B193636680083133F /* TH-CoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		EA6E608C193627B00083133F /* DiaryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiaryTests-Info.plist"; sourceTree = "<group>"; };
 		EA6E608E193627B00083133F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA6E6090193627B00083133F /* DiaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaryTests.m; sourceTree = "<group>"; };
+		EA6E609A193636680083133F /* TH-CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TH-CoreDataStack.h"; path = "model/TH-CoreDataStack.h"; sourceTree = "<group>"; };
+		EA6E609B193636680083133F /* TH-CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TH-CoreDataStack.m"; path = "model/TH-CoreDataStack.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 			children = (
 				EA6E6076193627B00083133F /* TH_AppDelegate.h */,
 				EA6E6077193627B00083133F /* TH_AppDelegate.m */,
+				EA6E609A193636680083133F /* TH-CoreDataStack.h */,
+				EA6E609B193636680083133F /* TH-CoreDataStack.m */,
 				EA6E607C193627B00083133F /* Images.xcassets */,
 				EA6E6079193627B00083133F /* Diary.xcdatamodeld */,
 				EA6E606E193627B00083133F /* Supporting Files */,
@@ -252,6 +257,7 @@
 				EA6E607B193627B00083133F /* Diary.xcdatamodeld in Sources */,
 				EA6E6078193627B00083133F /* TH_AppDelegate.m in Sources */,
 				EA6E6074193627B00083133F /* main.m in Sources */,
+				EA6E609C193636680083133F /* TH-CoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
